@@ -1,4 +1,4 @@
-package com.xj.sun.consumermovie;
+package com.xj.sun.consumermoviefeginclient;
 
 import com.netflix.hystrix.contrib.metrics.eventstream.HystrixMetricsStreamServlet;
 import org.springframework.boot.SpringApplication;
@@ -10,11 +10,10 @@ import org.springframework.cloud.client.loadbalancer.LoadBalanced;
 import org.springframework.context.annotation.Bean;
 import org.springframework.web.client.RestTemplate;
 
-
 @EnableDiscoveryClient
 @SpringBootApplication
 @EnableCircuitBreaker
-public class ConsumerMovieApplication {
+public class ConsumerMovieFeginClientApplication {
 
     @Bean
     @LoadBalanced
@@ -38,8 +37,7 @@ public class ConsumerMovieApplication {
 
         return registrationBean;
     }
-
     public static void main(String[] args) {
-        SpringApplication.run(ConsumerMovieApplication.class, args);
+        SpringApplication.run(ConsumerMovieFeginClientApplication.class, args);
     }
 }
