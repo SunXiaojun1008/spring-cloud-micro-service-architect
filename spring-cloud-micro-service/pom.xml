@@ -17,6 +17,7 @@
         <module>consumer-movie</module>
         <module>consumer-movie-fegin-client</module>
         <module>hystrix-turbine</module>
+        <module>gateway-zuul</module>
     </modules>
 
     <parent>

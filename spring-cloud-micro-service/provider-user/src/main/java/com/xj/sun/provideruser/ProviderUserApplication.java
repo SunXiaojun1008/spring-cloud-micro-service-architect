@@ -26,7 +26,6 @@ public class ProviderUserApplication {
 
         registrationBean.setName("HystrixMetricsStreamServlet");
 
-
         return registrationBean;
     }
 
